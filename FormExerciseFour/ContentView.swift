@@ -19,12 +19,14 @@ struct ContentView: View {
                         .foregroundColor(Color("bg_color"))
                 }
                 .overlay() {
+                    // TODO: add overlay alignment to bottom and adjust the padding of the profile image to meet the figma design
                     Image("profile")
                         .resizable()
                         .frame(width: 142, height: 142)
                 }
                 
                 VStack{
+                    // TODO: - change to use Button and move this button inside scrollview
                     Text("Change Picture")
                         .font(.headline)
                         .foregroundColor(.black)
